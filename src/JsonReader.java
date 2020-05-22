@@ -12,7 +12,7 @@ import org.json.simple.parser.JSONParser;
 public class JsonReader {
 	public JSONObject connectionUrlToJSON(String turn) {
 		try {
-			URL url = new URL("https://www.nlotto.co.kr/common.do?method=getLottoNumber&drwNo="+turn); //중요
+			URL url = new URL("https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo="+turn); //중요
 			HttpsURLConnection conn = null;
 			HostnameVerifier hnv = new HostnameVerifier() { //https URL을 연결
 				@Override
